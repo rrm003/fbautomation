@@ -1,0 +1,51 @@
+Selenium Python bindings provides a simple API to write functional/acceptance tests using Selenium WebDriver. Through Selenium Python API you can access all functionalities of Selenium WebDriver in an intuitive way.
+
+Installation : 
+    pip install selenium
+    
+Drivers : 
+Selenium requires a driver to interface with the chosen browser. 
+Make sure it’s in your PATH, e. g., place it in /usr/bin or /usr/local/bin.
+
+Browsers : 
+
+Chrome 
+Edge
+Firefox
+Safari
+
+Imports : 
+    from selenium import webdriver
+    from selenium.webdriver.common.keys import Keys
+The selenium.webdriver module provides all the WebDriver implementations. 
+
+Interacting with web pages : 
+
+The HTML elements are used to in order to access the web pages. 
+WebDriver offers a number of ways to find elements.
+
+Selenium provides the following methods to locate elements in a page:
+    find_element_by_id
+    find_element_by_name
+    find_element_by_xpath
+    find_element_by_link_text
+    find_element_by_partial_link_text
+    find_element_by_tag_name
+    find_element_by_class_name
+    find_element_by_css_selector
+    
+    Multiple elements can be found using methods : 
+    find_elements_by_name
+    find_elements_by_xpath
+    find_elements_by_link_text
+    find_elements_by_partial_link_text
+    find_elements_by_tag_name
+    find_elements_by_class_name
+    find_elements_by_css_selector
+
+
+If there’s more than one element that matches the query, then only the first will be returned. 
+
+If nothing can be found, a NoSuchElementException will be raised.
+
+
